@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 observer.unobserve(entry.target);
             }
         });
-    }, { root: null, rootMargin: '0px', threshold: 0.1 });
+    }, { root: null, rootMargin: '0px 0px 0px 200px', threshold: 0 });
 
     // Apply the observer to all elements with the .fade-in or .bar-item class
     document.querySelectorAll('.fade-in, .bar-item').forEach((el, index) => {
