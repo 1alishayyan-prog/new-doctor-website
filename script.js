@@ -103,10 +103,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const thumbnailsContainer = document.getElementById('carousel-thumbnails');
     if (mainCarouselContainer && thumbnailsContainer) {
         const slidesData = [
-            { mainImage: 'images/facility-1-1.png', thumbImage: 'images/facility-1-1-thumb.png', title: 'Advanced ENT Examination', description: 'State-of-the-art diagnostic equipment.' },
-            { mainImage: 'images/facility-1-2.png', thumbImage: 'images/facility-1-2-thumb.png', title: 'Endoscopic Procedures', description: 'Minimally invasive techniques.' },
-            { mainImage: 'images/facility-3.jpg', thumbImage: 'images/facility-thumb-3.jpg', title: 'Modern Operation Theater', description: 'Fully equipped surgical suites.' },
-            { mainImage: 'images/facility-4.jpg', thumbImage: 'images/facility-thumb-4.jpg', title: 'Patient Consultation', description: 'Comfortable and private rooms.' }
+            { mainImage: 'images/facility-one.jpg', thumbImage: 'images/facility-thumb-one.jpg', title: 'Advanced ENT Examination', description: 'State-of-the-art diagnostic equipment.' },
+            { mainImage: 'images/facility-two.jpg', thumbImage: 'images/facility-thumb-two.jpg', title: 'Endoscopic Procedures', description: 'Minimally invasive techniques.' },
+            { mainImage: 'images/facility-three.jpg', thumbImage: 'images/facility-thumb-three.jpg', title: 'Modern Operation Theater', description: 'Fully equipped surgical suites.' },
+            { mainImage: 'images/facility-four.jpg', thumbImage: 'images/facility-thumb-four.jpg', title: 'Patient Consultation', description: 'Comfortable and private rooms.' }
         ];
         let currentIndex = 0;
         let carouselInterval;
