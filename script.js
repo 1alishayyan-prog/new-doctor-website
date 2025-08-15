@@ -72,29 +72,34 @@ document.addEventListener('DOMContentLoaded', () => {
     // =================================================================
     //  SECTION 1: CLICK-TO-COPY PHONE NUMBER
     // =================================================================
-    const copyBtn = document.getElementById('copy-phone-btn');
-    if (copyBtn) {
-        const copyTextSpan = document.getElementById('copy-text');
-        const originalText = copyTextSpan.innerText;
-        
-        copyBtn.addEventListener('click', () => {
-            const numberToCopy = copyBtn.getAttribute('data-number');
-            
-            navigator.clipboard.writeText(numberToCopy).then(() => {
-                copyTextSpan.innerText = 'Number Copied!';
-                copyBtn.classList.add('bg-green-100', 'border-green-500', 'text-green-600');
-                // Revert the text and style after 2 seconds
-                setTimeout(() => {
-                    copyTextSpan.innerText = originalText;
-                    copyBtn.classList.remove('bg-green-100', 'border-green-500', 'text-green-600');
-                }, 2000);
-            }).catch(err => {
-                console.error('Failed to copy number: ', err);
-                copyTextSpan.innerText = 'Copy Failed';
-                setTimeout(() => { copyTextSpan.innerText = originalText; }, 2000);
-            });
+   const copyBtn = document.getElementById('copy-phone-btn');
+if (copyBtn) {
+    const copyTextSpan = document.getElementById('copy-text');
+    const originalText = copyTextSpan.innerText;
+
+    copyBtn.addEventListener('click', (event) => {
+        // Check if the user is likely on a desktop
+        const isDesktop = !/Mobi|Android/i.test(navigator.userAgent);
+
+        // On desktop, prevent the link from trying to open a call app
+        if (isDesktop) {
+            event.preventDefault();
+        }
+
+        const numberToCopy = copyBtn.getAttribute('data-number');
+
+        navigator.clipboard.writeText(numberToCopy).then(() => {
+            copyTextSpan.innerText = 'Number Copied!';
+            copyBtn.classList.add('bg-green-100', 'border-green-500', 'text-green-600');
+            setTimeout(() => {
+                copyTextSpan.innerText = originalText;
+                copyBtn.classList.remove('bg-green-100', 'border-green-500', 'text-green-600');
+            }, 2000);
+        }).catch(err => {
+            console.error('Failed to copy: ', err);
         });
-    }
+    });
+}
 
     // =================================================================
     //  SECTION 2: IMAGE CAROUSEL
