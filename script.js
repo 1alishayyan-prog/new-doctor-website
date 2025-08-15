@@ -103,10 +103,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const thumbnailsContainer = document.getElementById('carousel-thumbnails');
     if (mainCarouselContainer && thumbnailsContainer) {
         const slidesData = [
-            { mainImage: 'images/facility-one.jpg', thumbImage: 'images/facility-thumb-one.jpg', title: 'Advanced ENT Examination', description: 'State-of-the-art diagnostic equipment.' },
-            { mainImage: 'images/facility-two.jpg', thumbImage: 'images/facility-thumb-two.jpg', title: 'Endoscopic Procedures', description: 'Minimally invasive techniques.' },
-            { mainImage: 'images/facility-three.jpg', thumbImage: 'images/facility-thumb-three.jpg', title: 'Modern Operation Theater', description: 'Fully equipped surgical suites.' },
-            { mainImage: 'images/facility-four.jpg', thumbImage: 'images/facility-thumb-four.jpg', title: 'Patient Consultation', description: 'Comfortable and private rooms.' }
+            { mainImage: 'images/facility-one.jpg', thumbImage: 'images/facility-thumb-one.jpg', title: 'Advanced ENT procedures', description: 'State-of-the-art equipment.' },
+            { mainImage: 'images/facility-two.jpg', thumbImage: 'images/facility-thumb-two.jpg', title: 'Endoscopic Examination', description: 'Minimally invasive techniques.' },
+            { mainImage: 'images/facility-three.jpg', thumbImage: 'images/facility-thumb-three.jpg', title: 'Trained under Top ENT Surgeons', description: 'Affiliate links to best ENT Specialists.' },
+            { mainImage: 'images/facility-four.jpg', thumbImage: 'images/facility-thumb-four.jpg', title: 'Modern Operation Theater', description: 'with Comfortable and private rooms.' }
         ];
         let currentIndex = 0;
         let carouselInterval;
