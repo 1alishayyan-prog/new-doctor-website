@@ -455,73 +455,10 @@
                         <svg class="w-6 h-6 mr-3 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
                         Schedule Appointment
                     </h3>
-                    <form action="#" class="space-y-6">
-                        <div class="grid sm:grid-cols-2 gap-6">
-                            <div>
-                                <label for="full-name" class="block text-sm font-medium text-gray-700">Full Name *</label>
-                                <div class="mt-1 relative rounded-md shadow-sm form-input border border-gray-300 bg-gray-50">
-                                    <div class="pointer-events-none absolute inset-y-0 left-0 pl-3 flex items-center">
-                                        <svg class="h-5 w-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
-                                    </div>
-                                    <input type="text" name="full-name" id="full-name" class="block w-full pl-10 pr-3 py-2 border-transparent bg-transparent focus:outline-none sm:text-sm" placeholder="Enter your full name">
-                                </div>
-                            </div>
-                            <div>
-                                <label for="phone-number" class="block text-sm font-medium text-gray-700">Phone Number *</label>
-                                <div class="mt-1 relative rounded-md shadow-sm form-input border border-gray-300 bg-gray-50">
-                                    <input type="tel" name="phone-number" id="phone-number" class="block w-full px-3 py-2 border-transparent bg-transparent focus:outline-none sm:text-sm" placeholder="0300-0000000">
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <label for="email" class="block text-sm font-medium text-gray-700">Email Address *</label>
-                            <div class="mt-1 relative rounded-md shadow-sm form-input border border-gray-300 bg-gray-50">
-                                <div class="pointer-events-none absolute inset-y-0 left-0 pl-3 flex items-center">
-                                    <svg class="h-5 w-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-                                </div>
-                                <input type="email" name="email" id="email" class="block w-full pl-10 pr-3 py-2 border-transparent bg-transparent focus:outline-none sm:text-sm" placeholder="your.email@example.com">
-                            </div>
-                        </div>
-                        <div class="grid sm:grid-cols-2 gap-6">
-                            <div>
-                                <label for="date" class="block text-sm font-medium text-gray-700">Preferred Date *</label>
-                                <input type="date" name="date" id="date" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-gray-50 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm form-input">
-                            </div>
-                            <div>
-                                <label for="time" class="block text-sm font-medium text-gray-700">Preferred Time *</label>
-                                <select id="time" name="time" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-gray-50 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm form-input">
-                                    <option>Select time slot</option>
-                                    <option>9:00 AM - 11:00 AM</option>
-                                    <option>11:00 AM - 1:00 PM</option>
-                                    <option>2:00 PM - 4:00 PM</option>
-                                    <option>4:00 PM - 6:00 PM</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div>
-                            <label for="consultation-type" class="block text-sm font-medium text-gray-700">Type of Consultation *</label>
-                            <select id="consultation-type" name="consultation-type" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-gray-50 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm form-input">
-                                <option>Select consultation type</option>
-                                <option>First-time Visit</option>
-                                <option>Follow-up Visit</option>
-                                <option>Surgical Consultation</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label for="symptoms" class="block text-sm font-medium text-gray-700">Current Symptoms</label>
-                            <textarea id="symptoms" name="symptoms" rows="3" class="mt-1 block w-full border border-gray-300 bg-gray-50 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm form-input" placeholder="Please describe your current symptoms or concerns..."></textarea>
-                        </div>
-                         <div>
-                            <label for="history" class="block text-sm font-medium text-gray-700">Previous Treatment History</label>
-                            <textarea id="history" name="history" rows="3" class="mt-1 block w-full border border-gray-300 bg-gray-50 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm form-input" placeholder="Please mention any previous treatments, medications, or surgeries..."></textarea>
-                        </div>
-                        <div>
-                            <button type="submit" class="w-full flex items-center justify-center py-3 px-4 border border-transparent rounded-lg shadow-sm text-base font-medium text-white bg-gradient-to-r from-teal-500 to-cyan-600 hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500">
-                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
-                                Book Appointment
-                            </button>
-                        </div>
-                    </form>
+                    <div class="google-form-container">
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfH6fqlFJQOOzefJCLDronjEKjqjM2U0CO0ATS_mp-fme-1FQ/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+</div>
+                    <p class="text-gray-600 mt-4">Please fill out the form above to book your appointment. We will contact you within 24 hours to confirm your booking.</p>
                 </div>
                 <div class="space-y-8">
                     <div class="bg-blue-50 p-6 rounded-2xl shadow-lg border border-blue-100">
