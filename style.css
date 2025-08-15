@@ -24,7 +24,7 @@
         .fade-in, .bar-item {
             opacity: 0;
             transform: translateY(20px);
-            transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+            transition: opacity 0.2s ease-out, transform 0.2s ease-out;
         }
         .fade-in.is-visible, .bar-item.is-visible {
             opacity: 1;
